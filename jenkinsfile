@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building. is in progress.'
+                sh 'mvn clean pakcge '
             }
         }
         stage('Test') {
